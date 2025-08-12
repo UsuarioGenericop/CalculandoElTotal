@@ -18,8 +18,20 @@
             <p>Precio base: $400000</p>
             <div class="cuantity">
                 <p>Cantidad</p>
-                <button>+</button>
-                <button>-</button>
+                <button onclick="
+                subtract = document.querySelector('.totalhtml');
+                let newValue = parseInt(subtract.innerHTML) - 1;
+                if (newValue >= 0) {
+                    subtract.innerHTML = newValue;
+                    calculateTotal();
+                }
+                ">-</button>
+                <button onclick="
+                 total = document.querySelector('.totalhtml');
+                 total.innerHTML = (parseInt(total.innerHTML) + 1);
+                 calculateTotal();
+                 ">+</button>
+                <p class="totalhtml"></p>
             </div>
 
         </div>
