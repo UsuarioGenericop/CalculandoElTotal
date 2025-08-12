@@ -14,3 +14,12 @@
 img {
   height: 300px;
 }
+.cuantity {
+  display: flex;
+}
+button {
+  margin: 10px;
+  background-color: orange;
+  width: 30px;
+  height: 30px;
+}
