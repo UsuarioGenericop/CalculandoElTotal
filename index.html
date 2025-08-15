@@ -19,7 +19,7 @@
             <div class="cuantity">
                 <p>Cantidad</p>
                 <button onclick="
-                subtract = document.querySelector('.totalhtml');
+                subtract = document.querySelector('.totalhtml'); //usar let o const para definir la variable subtract
                 let newValue = parseInt(subtract.innerHTML) - 1;
                 if (newValue >= 0) {
                     subtract.innerHTML = newValue;
